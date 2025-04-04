@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admin Dashboard - UTA</title></head>
+<body>
+  <h2>Attendance Records</h2>
+  <table border="1">
+    <tr><th>Username</th><th>Timestamp</th></tr>
+    {% for r in records %}
+      <tr><td>{{ r[1] }}</td><td>{{ r[2] }}</td></tr>
+    {% endfor %}
+  </table>
+  <a href="/logout">Logout</a>
+</body>
+</html>
+

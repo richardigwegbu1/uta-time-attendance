@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Attendance - UTA</title></head>
+<body>
+  <h2>Welcome {{ session['user'] }}</h2>
+  <form action="/submit_attendance" method="POST">
+    <button type="submit">Mark Attendance</button>
+  </form>
+  <a href="/logout">Logout</a>
+</body>
+</html>
+

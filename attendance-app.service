@@ -1,0 +1,13 @@
+[Unit]
+Description=UTA Attendance Web App
+After=network.target
+
+[Service]
+User=ec2-user
+WorkingDirectory=/home/ec2-user/uta-time-attendance
+ExecStart=/usr/bin/python3 /home/ec2-user/uta-time-attendance/app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
