@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Clone') {
       steps {
-        git 'https://github.com/YOUR_USERNAME/uta-time-attendance.git'
+    
+       git 'https://github.com/richardigwegbu1/uta-time-attendance.git'
+    
       }
     }
     stage('Install Dependencies') {
