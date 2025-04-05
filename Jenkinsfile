@@ -16,7 +16,7 @@ pipeline {
 
     stage('Restart App') {
       steps {
-        sh 'sudo systemctl restart attendance-app'
+        sh 'sudo -S /bin/systemctl restart attendance-app'
       }
     }
   }
